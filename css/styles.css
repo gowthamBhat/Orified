@@ -118,6 +118,24 @@ a{
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 }
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon--container{
+    background-color: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex; /* spans are inline so we have to make it
+    display:inline and to center the element inside of it 
+    we need to use flexbox so inline-flex */
+    justify-content: center;
+    align-items: center;
+}
+.icon--primary{
+    fill: var(--color-headings);
+}
 @media screen and (min-width:1024px) {
   .list--tick .list__item{
     padding-left: 0;
