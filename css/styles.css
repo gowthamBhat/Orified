@@ -319,3 +319,20 @@ a {
     font-size: 1.7rem;
   }
 }
+/* Media */
+.media {
+  /* if we make display as flex 2 divs will place next to each other */
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
