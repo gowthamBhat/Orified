@@ -260,7 +260,6 @@ a {
 }
 
 /* Plans */
-/* Plans */
 .plan__name {
   color: #fff;
   margin: 0;
@@ -375,5 +374,21 @@ a {
   }
   .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--col2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1028px) {
+  .grid--col3 {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
