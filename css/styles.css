@@ -280,8 +280,17 @@ a {
   background: var(--color-secondary);
   color: #fff;
 }
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+.card--primary .badge--primary {
+  background: #126de4;
+}
 
 /* Plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
 .plan__name {
   color: #fff;
   margin: 0;
@@ -314,7 +323,9 @@ a {
 .plan--popular .card__header {
   position: relative;
 }
-
+.plan--popular {
+  transform: scale(1.1);
+}
 .plan--popular .card__header::before {
   content: url(../images/popular.svg);
   width: 40px;
@@ -322,6 +333,10 @@ a {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan--.plan--popular {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -643,4 +658,14 @@ so button will stretch out, to make it correct, we need to change it  */
     /* this can also written as */
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* plans block */
+.block-plans .grid {
+  /* only works for grids */
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
