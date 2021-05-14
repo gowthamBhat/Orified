@@ -541,6 +541,7 @@ so button will stretch out, to make it correct, we need to change it  */
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {

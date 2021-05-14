@@ -1,0 +1,51 @@
+<section class="block">
+  <header class="block__header">
+    <h2>What our Customers are Saying</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aut!</p>
+  </header>
+  <div class="container">
+    <div class="card testimonial">
+      <div class="grid grid--col2">
+        <div class="testimonial__image">
+          <!--here in 2 column grid img and quote block are childrens -->
+          <img
+            src="images/testimonial.jpg"
+            class="testimonial__image"
+            alt="A happy, smiling customer"
+          />
+          <!--make thw width 100% so it's resizeble -->
+          <span class="icon--container icon--container--accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <!-- <div style="height: 100px; background: gold"></div> -->
+        <!-- whole quote component-->
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            magnam consequatur dolorum deleniti magni temporibus architecto
+            veritatis ipsa ea nemo? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Deleniti porro voluptas exercitationem
+            perspiciatis voluptates dolorem perferendis in at esse iure.
+          </p>
+          <footer>
+            <!-- reusing media component -->
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Vishnu Shankar</h3>
+                <p class="quote__organization">Hope Company</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
