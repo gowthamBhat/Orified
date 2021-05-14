@@ -97,9 +97,11 @@ a {
 }
 .badge--secondary {
   background: var(--color-secondary);
+  color: #fff;
 }
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -230,7 +232,7 @@ a {
   }
 }
 
-/* button */
+/* Input */
 .input {
   padding: 1.5rem 3.5rem;
   border-radius: 30px;
@@ -460,6 +462,7 @@ a {
   }
   .testimonial .quote {
     margin-left: 6rem;
+    margin-right: 0;
   }
 }
 
@@ -549,11 +552,25 @@ so button will stretch out, to make it correct, we need to change it  */
   color: #7b858b;
 }
 
-.block--dark .block__heading {
+/* .block--dark .block__heading {
+  color: #fff;
+} */
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
-
 .block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+/* .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
@@ -561,7 +578,7 @@ so button will stretch out, to make it correct, we need to change it  */
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-}
+} */
 
 .container {
   max-width: 1140px;
@@ -649,7 +666,7 @@ so button will stretch out, to make it correct, we need to change it  */
   margin: 4rem auto;
   max-width: 670px;
 }
-.block--domain__prices {
+.block-domain__prices {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
@@ -697,7 +714,7 @@ so button will stretch out, to make it correct, we need to change it  */
 }
 
 @media screen and (min-width: 768px) {
-  .feature:nth-last-of-type(even) .feature__content {
+  .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
 }
