@@ -20,7 +20,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
@@ -83,7 +83,7 @@ a {
   }
 }
 
-/* * banner */
+/* * Badges */
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -114,7 +114,7 @@ a {
   list-style: none;
   padding-left: 0;
   font-size: 2rem;
-  color: var(--color-headings);
+  /* color: var(--color-headings); */
 }
 .list--inline .list__item {
   display: inline-block;
@@ -123,11 +123,14 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
+
+/* Icons */
 .icon {
   width: 40px;
   height: 40px;
@@ -147,7 +150,7 @@ a {
   background: var(--color-accent);
 }
 .icon--primary {
-  fill: var(--color-headings);
+  fill: var(--color-primary);
 }
 .icon--white {
   fill: #fff;
@@ -363,6 +366,7 @@ a {
 .media {
   /* if we make display as flex 2 divs will place next to each other */
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -695,5 +699,24 @@ so button will stretch out, to make it correct, we need to change it  */
 @media screen and (min-width: 768px) {
   .feature:nth-last-of-type(even) .feature__content {
     order: 2;
+  }
+}
+/* Showcase Block */
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
