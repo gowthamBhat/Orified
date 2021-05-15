@@ -1,0 +1,22 @@
+{
+  "name": "orified",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gowthamBhat/Orified.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gowthamBhat/Orified/issues"
+  },
+  "homepage": "https://github.com/gowthamBhat/Orified#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
